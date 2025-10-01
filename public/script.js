@@ -7,7 +7,7 @@
     try {
         unsplashAccessKey = localStorage.getItem(UNSPLASH_STORAGE_KEY) || '';
     } catch (error) {
-        console.error('胡萝卜插件：读取Unsplash Access Key失败', error);
+        console.error('胡萝卜插件: 读取Unsplash Access Key失败', error);
         unsplashAccessKey = '';
     }
     const UNSPLASH_PENDING_REQUESTS = new Map();
@@ -23,7 +23,7 @@
                 localStorage.removeItem(UNSPLASH_STORAGE_KEY);
             }
         } catch (error) {
-            console.error('胡萝卜插件：写入Unsplash Access Key失败', error);
+            console.error('胡萝卜插件: 写入Unsplash Access Key失败', error);
         }
     }
 
@@ -44,8 +44,8 @@
             if (html) el.innerHTML = html;
             return el;
         };
-        const carrotButton = create('div', 'cip-carrot-button', null, '🌺');
-        carrotButton.title = '胡萝卜快捷输入';
+        // const carrotButton = create('div', 'cip-carrot-button', null, '🌺');
+        // carrotButton.title = '胡萝卜快捷输入';
 
         const inputPanel = create(
             'div',
@@ -81,7 +81,7 @@
                 </div>
                 <div class="cip-footer-actions">
                     <button id="cip-recall-button">撤回</button>
-                    <button id="cip-insert-button">插 入</button>
+                    <button id="cip-insert-button">插入</button>
                 </div>
             </div>
         `,

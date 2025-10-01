@@ -1,9 +1,15 @@
 {
-  "name": "carrot-input-panel",
+  "name": "carrot-meta-chat",
   "display_name": "兔子不吃胡萝卜",
-  "version": "4.4",
-  "manifest_version": 3,
+  "loading_order": 1,
+  "requires": [],
+  "optional": [],
+  "js": "dist/index.js",
+  "css": "style.css",
+  "author": "BunnY in discord (https://discord.com/channels/1379304008157499423/1410288169924165663/1410288169924165663) & kattailmeow (https://github.com/kattailmeow)",
+  "version": "5.0.0",
+  "manifest_version": 4,
   "description": "一个提供多种格式化输入选项的浮动面板，由一个可拖拽的胡萝卜按钮触发。",
-  "js": ["script.js"],
-  "css": ["style.css"]
+  "homePage": "https://github.com/kattailmeow/carrot-kat",
+  "auto_update": true
 }
